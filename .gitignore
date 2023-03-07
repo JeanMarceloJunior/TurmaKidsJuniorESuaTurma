@@ -1,2 +1,30 @@
-# Google App Engine generated folder
-appengine-generated/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UIF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-devide-widht, initial-scale=1.0">
+    <title>Peso exedido</title>
+</head>
+<body>
+    <! - onkeyup: detectar o ato de soltar a tecla>
+    <input id="numero" placeholder="Digite um Número" onkeyup="mostrarTabuada()">
+    <div id="resultado"></div>    
+    </input>
+    
+   <script>
+       function mostrarTabuada(){
+           var numero= document.querySelector("#numero"); //QuerySelector: Retornar o 1 element
+           var resultado = document.querySelector("#resultado");
+           resultado.innerText = ""; //innerText: renderiza o valor no html
+           for (var i = 0 ; i <= 10 ; i++){
+              var div = document.createElement("div");//cria elemento html pela tag especificado
+              div.innerText = numero.value* i;
+              resultado.appendChild(div); //appendChild: adiciona um novo elemento na lista
+
+         }
+     }
+     </script>
+</body>
+</meta>
+</meta>
