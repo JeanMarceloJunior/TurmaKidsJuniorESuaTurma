@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UIF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-devide-widht, initial-scale=1.0">
+    <title>Idade do Nadador</title>
+</head>
+<body>
+     Informe a sua idade <input id="idade" type="number"><br/><p>
+
+        <button onclick="calcPxs()">Calcular</button>
+
+     <script>
+        function calcPxs(){
+            var px = parseFloat(document.getElementById("Idade").value);
+
+            if ((idade>=5)&&(idade<=7)){
+                alert("Infantil A")
+            }
+            else{
+               if ((idade>=8)&&(idade<-=10)){
+                   alert ("Infantl B")
+               }
+            }
+        }
+     </script>
+
+</body>
+</html>
