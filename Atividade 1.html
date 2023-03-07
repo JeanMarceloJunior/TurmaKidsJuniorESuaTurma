@@ -7,29 +7,24 @@
     <title>Peso exedido</title>
 </head>
 <body>
-     Informe a quantidade de peixes (Kg) <input id="peso" type="number"><br/><p>
+    <! - onkeyup: detectar o ato de soltar a tecla>
+    <input id="numero" placeholder="Digite um Número" onkeyup="mostrarTabuada()">
+    <div id="resultado"></div>    
+    </input>
     
-        <button onclick="calcPxs()">Calcular</button>
+   <script>
+       function mostrarTabuada(){
+           var numero= document.querySelector("#numero"); //QuerySelector: Retornar o 1 element
+           var resultado = document.querySelector("#resultado");
+           resultado.innerText = ""; //innerText: renderiza o valor no html
+           for (var i = 0 ; i <= 10 ; i++){
+              var div = document.createElement("div");//cria elemento html pela tag especificado
+              div.innerText = numero.value* i;
+              resultado.appendChild(div); //appendChild: adiciona um novo elemento na lista
 
-     <script>
-        function calcPxs(){
-            var px = parseFloat(document.getElementById("peso").value);
-            var c=0
-            var m=0
-
-            if (px > 50){
-                e = px-50;
-                m=4*e;
-                alert("O peso excedito foi: "+ e* " e a multa foi: " + m);
-            }
-            else{
-                e=0;
-                m=0;
-                alert ("Não foi gerado multa por peso exedido"+ "\n"+"Excedido = "+ e +"\nMulta= "+n);
-            }
-        }
+         }
+     }
      </script>
-
 </body>
-
-</html>
+</meta>
+</meta>
